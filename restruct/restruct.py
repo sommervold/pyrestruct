@@ -39,6 +39,30 @@ import struct
 from dataclasses import dataclass
 import dataclasses
 
+__all__ = [
+    "dataformat",
+    "Field",
+    "BitField",
+    "Struct",
+    "IntegerField",
+    "StringField",
+    "FloatField",
+    "DoubleField",
+    "ArrayField",
+    "StructField",
+    "UnusedField",
+    "ByteField",
+    "IntegerBitField",
+    "BooleanBitField",
+    "UnusedBitField",
+    "IntEnumField",
+    "IntEnumBitField",
+    "StrEnumField",
+    "BooleanField",
+    "VariableField",
+    "TerminatedStringField",
+]
+
 _T = TypeVar("_T")
 FieldSize: TypeAlias = int | str
 _IntEnum = TypeVar("_IntEnum", bound=enum.IntEnum)
