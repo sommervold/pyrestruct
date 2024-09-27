@@ -25,3 +25,6 @@ addopts = [
     "--ignore=lib",
     "--ignore=lib64",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["restruct"]
