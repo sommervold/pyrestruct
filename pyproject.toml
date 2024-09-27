@@ -1,0 +1,20 @@
+[project]
+name = "pyrestruct"
+version = "0.1.0"
+description = "Packing and unpacking between bytes and classes"
+requires-python = ">=3.11"
+authors = [
+    {name = "Nicolai Sommervold", email="nicolai.sommervold@gmail.com"}
+]
+readme = "readme.rst"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--ignore=lib",
+    "--ignore=lib64",
+]
